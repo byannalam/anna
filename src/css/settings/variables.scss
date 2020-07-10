@@ -1,0 +1,29 @@
+/* Layout */
+$max-width: 1280px;
+$gutter: 20px;
+
+/* Breakpoint min widths */
+$small: 768px;
+$medium: 992px;
+$large: 1200px;
+
+/* Colours */
+$background-colour: $white;
+$font-colour: $charcoal_100;
+
+/* Fonts */
+$font-family: 'Montserrat', sans-serif;
+
+/* Font sizes */
+$control-font-size: 24px;
+$body-font-size: 14px;
+$body-font-size-small: 12px;
+
+/* Form Controls */
+$border-radius: 3px;
+$padding: 10px 20px;
+$vertical-offset: 39px;
+
+$control-border-colour: $charcoal_30;
+$control-border-hover-colour: $charcoal_50;
+$control-border-error-colour: $red_40;

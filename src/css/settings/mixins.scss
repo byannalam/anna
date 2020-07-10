@@ -1,0 +1,76 @@
+@mixin block-left {
+    display: block;
+    float: left;
+}
+
+@mixin block-full-width {
+    display: block;
+    width: 100%;
+}
+
+@mixin border-radius($value) {
+    -webkit-border-radius: $value;
+    -moz-border-radius: $value;
+    border-radius: $value;
+}
+
+@mixin border-top-left-radius($value) {
+    -webkit-border-top-left-radius: $value;
+    -moz-border-top-left-radius: $value;
+    border-top-left-radius: $value;
+}
+
+@mixin border-bottom-left-radius($value) {
+    -webkit-border-bottom-left-radius: $value;
+    -moz-border-bottom-left-radius: $value;
+    border-bottom-left-radius: $value;
+}
+
+@mixin border-top-right-radius($value) {
+    -webkit-border-top-right-radius: $value;
+    -moz-border-top-right-radius: $value;
+    border-top-right-radius: $value;
+}
+
+@mixin border-bottom-right-radius($value) {
+    -webkit-border-bottom-right-radius: $value;
+    -moz-border-bottom-right-radius: $value;
+    border-bottom-right-radius: $value;
+}
+
+@mixin box-sizing() {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@mixin fill-screen {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+@mixin font($font-size) {
+    font-family: $font-family;
+    font-size: $font-size;
+}
+
+@mixin width-media-query($standard-width, $small-width) {
+    @media only screen and (max-width: $small) {
+        width: $small-width;
+    }
+
+    @media only screen and (min-width: $small) {
+        width: $standard-width;
+    }
+
+    @media only screen and (min-width: $medium) {
+        width: $standard-width;
+    }
+
+    @media only screen and (min-width: $large) {
+        width: $standard-width;
+    }
+}

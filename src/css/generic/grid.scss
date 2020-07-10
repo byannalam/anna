@@ -1,0 +1,65 @@
+.container {
+    @include block-full-width;
+
+    .row {
+        @include block-full-width;
+        .column, .columns {
+            @include block-left;
+            margin-left: $gutter/2;
+            margin-right: $gutter/2;
+        }
+
+        .columns {
+
+            &.twelve {
+                width: calc(100% - #{$gutter});
+            }
+
+            &.eleven {
+                width: calc(91.67% - #{$gutter});
+            }
+
+            &.ten {
+                width: calc(83.33% - #{$gutter});
+            }
+
+            &.nine {
+                width: calc(75% - #{$gutter});
+            }
+
+            &.eight {
+                width: calc(66.67% - #{$gutter});
+            }
+
+            &.seven {
+                width: calc(58.33% - #{$gutter});
+            }
+
+            &.six {
+                width: calc(50% - #{$gutter});
+            }
+
+            &.five {
+                width: calc(41.67% - #{$gutter});
+            }
+
+            &.four {
+                width: calc(33.33% - #{$gutter});
+            }
+
+            &.three {
+                width: calc(25% - #{$gutter});
+            }
+
+            &.two {
+                width: calc(16.67% - #{$gutter});
+            }
+        }
+
+        .column {
+            &.one {
+                width: calc(8.33% - #{$gutter});
+            }
+        }
+    }
+}
